@@ -1,0 +1,14 @@
+{
+  "name": "su-interview",
+  "version": "1.0.0",
+  "description": "Interview Test",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Nathan Fisher",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  }
+}

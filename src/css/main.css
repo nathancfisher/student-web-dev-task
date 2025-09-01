@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --font__weight--md: 500;
+  --font__weight--sb: 600;
+  --font__weight--b: 800;
+  --font__weight--eb: 900;
+}
+
+body {
+  line-height: 1;
+  color: #333;
+}
