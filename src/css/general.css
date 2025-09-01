@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --font__weight--md: 500;
+  --font__weight--sb: 600;
+  --font__weight--b: 700;
+  --font__weight--eb: 800;
+
+  --color__blue: rgba(87, 0, 255, 1);
+
+  --border__radius: 2rem;
+}
+
+body {
+  padding: 4.2rem 0;
+  display: block;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #333;
+}
