@@ -2,11 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sheffield Students' Union</title>
+
+    <!-- Favicon -->
     <link
       rel="icon"
       type="image/x-icon"
       href="https://f0a63dc10f9b8e5602d2-918c4a94592cd7fa431dd71bf51b646a.ssl.cf3.rackcdn.com/faviconSSU.png"
     />
+
+    <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
@@ -15,313 +21,366 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700,700i,800,800i,900,900i&display=swap"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sheffield Students' Union</title>
+
+    <!-- External CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/ant-design-icons@1.3.3/dist/anticons.min.css"
     />
-    <script
-      type="module"
-      crossorigin
-      src="https://assets-cdn.sums.su/SH/Web_Dev_Test/main.js"
-    ></script>
     <link
       rel="stylesheet"
       crossorigin
       href="https://assets-cdn.sums.su/SH/Web_Dev_Test/main.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"
     />
 
     <!-- Own CSS -->
     <link rel="stylesheet" href="./src/css/utils.css" />
     <link rel="stylesheet" href="./src/css/general.css" />
     <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="./src/css/queries.css" />
+
+    <!-- External JS -->
+    <script
+      type="module"
+      crossorigin
+      src="https://assets-cdn.sums.su/SH/Web_Dev_Test/main.js"
+    ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- Own JS -->
     <script defer src="./src/js/main.js"></script>
-
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
 
   <body>
-    <div class="su__body g__cont">
-      <div
-        class="header grid grid--2-cols align gap--md g__4--m g__8--t g__11--d"
-      >
-        <div class="flex center section__header text-align">
-          <h2 class="font--md inter">Your Welcome Questions Answered</h2>
-        </div>
-        <img
-          class="section__header--img"
-          src="./src/img/welcomeFAQImage.png"
-          alt="Welcome Image"
-        />
-      </div>
-
-      <div class="testimonials flex column gap--sm g__4--m g__8--t g__5--d">
-        <div class="testimonial">
-          <p>
-            <span>Sheff Students Say</span> ‘Don't feel as though you need to
-            live a typical 'university experience.' Everyone's journey is
-            unique, and taking time for yourself to explore the city, settle
-            into campus and find your group is just as important as learning!
-            There's no pressure to go to clubs, drink, do sports etc... you can
-            experience university at your own pace!’
-          </p>
-        </div>
-
-        <div class="testimonial">
-          <p>
-            <span>Sheff Students Say</span> ‘It's great to get involved, but
-            remember you don't have to get involved in everything! Being a
-            fresher is a very exciting time with lots of things going on, which
-            you should definitely check out, however it can sometimes be
-            exhausting to try and do everything. Basically, it's okay to have a
-            restful night in, and you probably should. :)’
-          </p>
-        </div>
-      </div>
-
-      <ul class="accordian flex column gap--sm g__4--m g__8--t g__6--d">
-        <li class="flex column accordian__el" data-value="4">
-          <div class="flex between center el__header">
-            <p>What Is Sheffield Students' Union?</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 4.5v15m7.5-7.5h-15"
-              />
-            </svg>
+    <main>
+      <div class="su__body g__cont">
+        <header
+          class="header grid grid--2-cols align gap--md mg-b--sm g__4--m g__8--t g__11--d"
+        >
+          <div class="flex center section-header text-align">
+            <h2 class="secondary-heading">Your Welcome Questions Answered</h2>
           </div>
+          <div role="img" class="section-header--img" alt="Welcome Image" />
+        </header>
 
-          <div class="underline"></div>
-
-          <div class="el__content">
-            <p>
-              Sheffield Students’ Union exists to ensure you have an outstanding
-              experience during your time as a student at the University of
-              Sheffield. We’re a sister organisation to the University, but
-              independent of it. All University of Sheffield students are
-              automatically members of our union, which gives them access to our
-              support, communities, representation, entertainment, activities
-              and facilities. We’ve been the heart and soul of student life
-              since we began in 1906, and value being inclusive, impactful, and
-              famously friendly! We’re also a charity which means the money you
-              spend here goes back into supporting students!
-            </p>
-          </div>
-        </li>
-
-        <li class="flex column accordian__el" data-value="1">
-          <div class="flex between center el__header">
-            <p>What Is Welcome Week?</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 4.5v15m7.5-7.5h-15"
-              />
-            </svg>
-          </div>
-
-          <div class="underline"></div>
-
-          <div class="el__content">
-            <p>
-              Welcome Week (AKA Freshers Week) is a week dedicated to helping
-              you settle into student life. It showcases opportunities you can
-              get involved in, runs activities, events, and fantastic nights to
-              enjoy, and helps you start your student life on the right track.
-              Our fairs are free and there will be lots of freebies to grab
-              throughout the week. Don’t worry if you miss any of it though, as
-              it’s never too late to get involved. The fun continues throughout
-              the year!
-            </p>
-          </div>
-        </li>
-        <li class="flex column accordian__el" data-value="2">
-          <div class="flex between center el__header">
-            <p>Where can I find Official Freshers Week Nights Out?</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 4.5v15m7.5-7.5h-15"
-              />
-            </svg>
-          </div>
-
-          <div class="underline"></div>
-
-          <div class="el__content">
-            <p>
-              Beware of fake official freshers events. Unscrupulous promoters
-              often set up Freshers events and chat groups, pretending to be
-              part of the Official University of Sheffield Freshers Week. The
-              University of Sheffield Students’ Union is the only organisation
-              to run the Official University of Sheffield Freshers Nights Out.
-              You can only get tickets for these events through our Students’
-              Union and Foundry website (with the expectation of our new
-              Leadmill Fridays!). Our events take place inside the Students’
-              Union venues, where you can expect one of the best and safest
-              nights out in Sheffield.
-            </p>
-          </div>
-        </li>
-        <li class="flex column accordian__el" data-value="3">
-          <div class="flex between center el__header">
-            <p>I’m a bit anxious about it all. Will I be okay?</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 4.5v15m7.5-7.5h-15"
-              />
-            </svg>
-          </div>
-
-          <div class="underline"></div>
-
-          <div class="el__content">
-            <p>
-              It’s natural to feel anxious about starting as a new student as
-              there’s a lot of change to navigate. The good news is that you’ll
-              find lots of friendly students and staff ready to welcome and help
-              you on arrival and throughout your first few weeks. Most new
-              students will be feeling the same so don’t be afraid to say hi! We
-              along with the University have a wide variety of activities on
-              offer, designed to appeal to different interests and needs. We try
-              to make sure our activities are as accessible as possible. Our
-              Welcome fairs have quiet hours, free ear plugs, and extra quiet
-              rooms so you can take a break when you need it. We hope our events
-              will help you meet new people, but don’t worry if you don’t make
-              lifelong friendships in your first week. There are plenty of
-              opportunities to meet new people and join in activities throughout
-              the year!
-            </p>
-          </div>
-        </li>
-        <li class="contact">
-          <p class="contact__header">Got a question?</p>
-          <p class="contact__information">
-            Email ‘Welcome Question’ to studentsunion@sheffield.ac.uk or DM our
-            Instagram
-          </p>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Slider --->
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="./src/img/swiper01_01.png" /></div>
-        <div class="swiper-slide"><img src="./src/img/swiper01_02.png" /></div>
-        <div class="swiper-slide"><img src="./src/img/swiper01_03.png" /></div>
-        <div class="swiper-slide"><img src="./src/img/swiper02_03.png" /></div>
-        <div class="swiper-slide"><img src="./src/img/swiper03_02.png" /></div>
-      </div>
-    </div>
-
-    <div class="su__body g__cont">
-      <!-- Activities Section -->
-      <div class="flex activities__header g__4--m g__8--t g__11--d">
-        <h3 class="flex center text-align inter">Discover Your Communities</h3>
-        <h2 class="flex center text-align inter">
-          Activites and Opportunities
-        </h2>
-      </div>
-
-      <!-- Actitivities Information -->
-      <div class="activities__information g__4--m g__8--t g__7--d">
-        <p class="flex column gap--sm">
-          <span
-            >We have hundreds of student communities ready to welcome you into
-            them.</span
-          >
-          <span
-            >Our 370 student societies, covering everything from baking to
-            beekeeping, are the heart of student life and a great way to meet
-            new friends, develop new skills, keep up with current hobbies or
-            find something completely new.</span
-          >
-          <span
-            >Our communities are diverse and inclusive and during your time here
-            you’ll probably be part of many. If you feel something is missing
-            you can even create your own!</span
-          >
-        </p>
-        <div class="btns grid grid--2-cols gap--sm">
-          <a class="btn btn--activities flex between" href="#">
-            <p><span>Activities</span> & opportunities</p>
-            <div class="icon__wrapper flex center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                />
-              </svg>
+        <section
+          class="swiper swiper--testimonials mg-b--sm g__4--m g__8--t g__5--d"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <blockquote class="testimonial">
+                <p>
+                  <span>Sheff Students Say</span> 'Don't feel as though you need
+                  to live a typical 'university experience.' Everyone's journey
+                  is unique, and taking time for yourself to explore the city,
+                  settle into campus and find your group is just as important as
+                  learning! There's no pressure to go to clubs, drink, do sports
+                  etc... you can experience university at your own pace!'
+                </p>
+              </blockquote>
             </div>
-          </a>
-          <a class="btn btn--activities flex between" href="#">
-            <p><span>Find societies</span> & sports clubs</p>
-            <div class="icon__wrapper flex center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                />
-              </svg>
+
+            <div class="swiper-slide">
+              <blockquote class="testimonial">
+                <p>
+                  <span>Sheff Students Say</span> ‘It's great to get involved,
+                  but remember you don't have to get involved in everything!
+                  Being a fresher is a very exciting time with lots of things
+                  going on, which you should definitely check out, however it
+                  can sometimes be exhausting to try and do everything.
+                  Basically, it's okay to have a restful night in, and you
+                  probably should. :)’
+                </p>
+              </blockquote>
             </div>
-          </a>
-        </div>
+          </div>
+        </section>
+
+        <section class="faq mg-b--sm g__4--m g__8--t g__6--d">
+          <ul class="accordian flex column gap--sm">
+            <li class="flex column accordian__el gap--xsm" data-value="4">
+              <div class="flex between center el__header">
+                <p>What Is Sheffield Students' Union?</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 4.5v15m7.5-7.5h-15"
+                  />
+                </svg>
+              </div>
+
+              <div class="underline"></div>
+
+              <div class="el__content">
+                <p>
+                  Sheffield Students’ Union exists to ensure you have an
+                  outstanding experience during your time as a student at the
+                  University of Sheffield. We’re a sister organisation to the
+                  University, but independent of it. All University of Sheffield
+                  students are automatically members of our union, which gives
+                  them access to our support, communities, representation,
+                  entertainment, activities and facilities. We’ve been the heart
+                  and soul of student life since we began in 1906, and value
+                  being inclusive, impactful, and famously friendly! We’re also
+                  a charity which means the money you spend here goes back into
+                  supporting students!
+                </p>
+              </div>
+            </li>
+
+            <li class="flex column accordian__el gap--xsm" data-value="1">
+              <div class="flex between center el__header">
+                <p>What Is Welcome Week?</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 4.5v15m7.5-7.5h-15"
+                  />
+                </svg>
+              </div>
+
+              <div class="underline"></div>
+
+              <div class="el__content">
+                <p>
+                  Welcome Week (AKA Freshers Week) is a week dedicated to
+                  helping you settle into student life. It showcases
+                  opportunities you can get involved in, runs activities,
+                  events, and fantastic nights to enjoy, and helps you start
+                  your student life on the right track. Our fairs are free and
+                  there will be lots of freebies to grab throughout the week.
+                  Don’t worry if you miss any of it though, as it’s never too
+                  late to get involved. The fun continues throughout the year!
+                </p>
+              </div>
+            </li>
+            <li class="flex column accordian__el gap--xsm" data-value="2">
+              <div class="flex between center el__header">
+                <p>Where can I find Official Freshers Week Nights Out?</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 4.5v15m7.5-7.5h-15"
+                  />
+                </svg>
+              </div>
+
+              <div class="underline"></div>
+
+              <div class="el__content">
+                <p>
+                  Beware of fake official freshers events. Unscrupulous
+                  promoters often set up Freshers events and chat groups,
+                  pretending to be part of the Official University of Sheffield
+                  Freshers Week. The University of Sheffield Students’ Union is
+                  the only organisation to run the Official University of
+                  Sheffield Freshers Nights Out. You can only get tickets for
+                  these events through our Students’ Union and Foundry website
+                  (with the expectation of our new Leadmill Fridays!). Our
+                  events take place inside the Students’ Union venues, where you
+                  can expect one of the best and safest nights out in Sheffield.
+                </p>
+              </div>
+            </li>
+            <li class="flex column accordian__el gap--xsm" data-value="3">
+              <div class="flex between center el__header">
+                <p>I’m a bit anxious about it all. Will I be okay?</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 4.5v15m7.5-7.5h-15"
+                  />
+                </svg>
+              </div>
+
+              <div class="underline"></div>
+
+              <div class="el__content">
+                <p>
+                  It’s natural to feel anxious about starting as a new student
+                  as there’s a lot of change to navigate. The good news is that
+                  you’ll find lots of friendly students and staff ready to
+                  welcome and help you on arrival and throughout your first few
+                  weeks. Most new students will be feeling the same so don’t be
+                  afraid to say hi! We along with the University have a wide
+                  variety of activities on offer, designed to appeal to
+                  different interests and needs. We try to make sure our
+                  activities are as accessible as possible. Our Welcome fairs
+                  have quiet hours, free ear plugs, and extra quiet rooms so you
+                  can take a break when you need it. We hope our events will
+                  help you meet new people, but don’t worry if you don’t make
+                  lifelong friendships in your first week. There are plenty of
+                  opportunities to meet new people and join in activities
+                  throughout the year!
+                </p>
+              </div>
+            </li>
+            <aside class="contact">
+              <p class="contact__header">Got a question?</p>
+              <p class="contact__information">
+                Email ‘Welcome Question’ to studentsunion@sheffield.ac.uk or DM
+                our Instagram
+              </p>
+            </aside>
+          </ul>
+        </section>
       </div>
 
-      <!-- Acitivites Image -->
-      <img
-        class="activities__img g__4--m g__8--t g__5--d"
-        src="./src/img/activitiesAndOppLead.png"
-      />
-    </div>
+      <!-- Slider --->
+      <section class="swiper--images mg-b--sm">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="./src/img/swiper01_01.png"
+              alt="Students engaging in activities"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./src/img/swiper01_02.png"
+              alt="Students attending a Welcome Week event"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./src/img/swiper01_03.png"
+              alt="Students enjoying their social life at Sheffield"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./src/img/swiper02_03.png"
+              alt="Students attending a Welcome Week event"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./src/img/swiper03_02.png"
+              alt="Students attending a Welcome Week event"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="su__body g__cont">
+        <!-- Activities Section -->
+        <div class="flex activities__header mg-b--sm g__4--m g__8--t g__11--d">
+          <h4 class="subheading flex center text-align inter">
+            Discover Your Communities
+          </h4>
+
+          <h3 class="tertiary-heading flex center text-align inter">
+            Activites and Opportunities
+          </h3>
+
+          <img
+            src="./src/img/activitiesAndOppLead.png"
+            alt="Activities Image"
+            class="activities__img--2 hidden"
+          />
+        </div>
+
+        <!-- Actitivities Information -->
+        <section class="activities grid gap--md g__4--m g__8--t g__12--d">
+          <div class="activities__information">
+            <p class="flex column gap--sm">
+              <span
+                >We have hundreds of student communities ready to welcome you
+                into them.</span
+              >
+              <span
+                >Our 370 student societies, covering everything from baking to
+                beekeeping, are the heart of student life and a great way to
+                meet new friends, develop new skills, keep up with current
+                hobbies or find something completely new.</span
+              >
+              <span
+                >Our communities are diverse and inclusive and during your time
+                here you’ll probably be part of many. If you feel something is
+                missing you can even create your own!</span
+              >
+            </p>
+            <div class="btns grid grid--2-cols gap--sm">
+              <a class="btn btn--activities flex between" href="#">
+                <p><span>Activities</span> & opportunities</p>
+                <div class="icon__wrapper flex center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                </div>
+              </a>
+              <a class="btn btn--activities flex between" href="#">
+                <p><span>Find societies</span> & sports clubs</p>
+                <div class="icon__wrapper flex center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <img
+            src="./src/img/activitiesAndOppLead.png"
+            alt="Activities Image"
+            class="activities__img"
+          />
+        </section>
+      </section>
+    </main>
   </body>
 </html>

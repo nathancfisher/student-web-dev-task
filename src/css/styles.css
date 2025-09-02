@@ -1,28 +1,30 @@
 /* Section Header */
 .header {
-  margin-bottom: 4.2rem;
 }
 
-.section__header {
+.section-header {
   background-color: var(--color__blue);
   border-radius: 100rem;
-  padding: 14.4rem 14rem;
+  padding: 9.6rem 12.8rem;
 }
 
-.section__header > h2 {
+.section-header > h2 {
   color: #fff;
-  line-height: 1;
-  font-size: 9.6rem;
-  letter-spacing: -0.5px;
 }
 
-.section__header--img {
+.section-header--img {
+  width: 100%;
   aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-image: url("/src/img/welcomeFAQImage.png");
+  background-position: center;
+  background-size: cover;
 }
 
 /* Testimonials */
-.testimonials {
-  padding-top: 15rem;
+.swiper--testimonials {
+  width: 100%;
+  height: 50rem;
 }
 
 .testimonial {
@@ -43,12 +45,11 @@
 .accordian {
   align-self: start;
   background-color: #00d2641a;
-  padding: 2.4rem 4rem;
+  padding: 3.2rem 4rem;
   border-radius: var(--border__radius);
 }
 
 .accordian__el {
-  gap: 1.2rem;
 }
 
 .el__header {
@@ -56,7 +57,7 @@
 
 .el__header > p,
 .contact__header {
-  font-size: 2.4rem;
+  font-size: var(--font--lg);
   font-weight: var(--font__weight--sb);
 }
 
@@ -79,7 +80,7 @@
 }
 
 .el__content > p {
-  font-size: 1.6rem;
+  font-size: inherit;
 }
 
 .active > .el__content {
@@ -92,10 +93,20 @@
   width: 50%;
 }
 
-/* Carousel */
-.swiper {
+/* Images Carousel */
+.swiper--images {
   width: 100%;
-  margin: 4.2rem 0;
+  height: auto;
+}
+
+.swiper--images .swiper-slide {
+  display: block;
+  width: 35%;
+}
+
+.swiper-slide img {
+  width: 100%;
+  aspect-ratio: auto;
 }
 
 /* Activites Header */
@@ -104,41 +115,40 @@
   width: 100%;
   padding-top: 10%;
   justify-content: flex-end;
-  margin-bottom: 4.2rem;
 }
 
-.activities__header > h2,
-.activities__header > h3 {
+.activities__header > .tertiary-heading,
+.activities__header > .subheading {
   color: #000;
-  line-height: 95%;
   border-radius: 100rem;
-  font-weight: var(--font__weight--md);
 }
 
-.activities__header > h2 {
+.activities__header > .tertiary-heading {
   background-color: #cdc6fc;
   width: 65%;
   padding: 9.6rem;
-  font-size: 8rem;
 }
 
-.activities__header > h3 {
+.activities__header > .subheading {
   position: absolute;
   top: 0;
   left: 0;
   background-color: #f6a60e;
   padding: 8rem;
-  font-size: 5.2rem;
   width: 50%;
   height: 50%;
   align-self: flex-start;
 }
 
 /* Activities Content */
+.activities {
+  grid-template-columns: 3fr 2fr;
+}
+
 .activities__information > p {
-  font-size: 2rem;
+  font-size: var(--font--md);
   background-color: #e5fea3;
-  padding: 4.2rem 4.2rem;
+  padding: 4.2rem;
   border-radius: var(--border__radius);
   font-weight: var(--font__weight--sb);
   margin-bottom: 2.4rem;
@@ -156,7 +166,7 @@
 
 .btn--activities > p {
   width: 80%;
-  font-size: 2.4rem;
+  font-size: var(--font--lg);
   color: #fff;
 }
 
@@ -174,5 +184,5 @@
 .btn--activities svg {
   width: 2.4rem;
   height: 2.4rem;
-  color: #000;
+  color: #333;
 }

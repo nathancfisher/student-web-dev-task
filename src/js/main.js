@@ -16,8 +16,21 @@ const accordianSet = (value) => {
   accEls.find((el) => el.dataset.value === value).classList.add("active");
 };
 
-// Swiper
-const swiper = new Swiper(".swiper", {
-  slidesPerView: "2",
-  spaceBetween: "50",
+// Testimonials Swiper
+
+const testSwiper = new Swiper(".swiper--testimonials", {
+  slidesPerView: "auto",
+  spaceBetween: 16,
+  breakpoints: {
+    1200: { slidesPerView: 2, direction: "vertical" },
+  },
+});
+
+// Images Swiper
+const swiper = new Swiper(".swiper--images", {
+  slidesPerView: "auto",
+  spaceBetween: "12",
+  breakpoints: {
+    580: { slidesPerView: "auto", spaceBetween: "32" },
+  },
 });
