@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -34,6 +35,13 @@ body {
 
 header {
   all: unset;
+}
+
+button {
+  font-weight: inherit;
+  font-family: inherit;
+  text-align: left;
+  line-height: inherit;
 }
 
 /* Headings */
@@ -105,4 +113,8 @@ header {
 
 .flex.end {
   align-items: flex-end;
+}
+
+.flex.align {
+  align-items: center;
 }

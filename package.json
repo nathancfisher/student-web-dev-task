@@ -2,13 +2,16 @@
   "name": "su-interview",
   "version": "1.0.0",
   "description": "Interview Test",
+  "homepage": "https://nathancfisher.github.io/student-web-dev-task",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --public-url ./",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Nathan Fisher",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "parcel": "^2.15.4"
   }
 }

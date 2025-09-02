@@ -16,6 +16,7 @@
   .swiper--testimonials .swiper-slide {
     display: block;
     width: 80%;
+    height: auto;
   }
 
   .testimonial {
@@ -215,9 +216,14 @@
     z-index: -1;
   }
 
-  .testimonial {
-    width: 85%;
+  .swiper--testimonials .swiper-slide {
+    display: block;
+    width: 90%;
   }
+
+  /* .testimonial {
+    width: 85%;
+  } */
 
   .activities__header > .subheading {
     width: 75%;
@@ -235,5 +241,9 @@
 
   .swiper--images {
     margin-bottom: 15rem;
+  }
+
+  .swiper--images .swiper-slide {
+    width: 45%;
   }
 }

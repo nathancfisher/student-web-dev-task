@@ -16,7 +16,7 @@
   width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
-  background-image: url("/src/img/welcomeFAQImage.png");
+  background-image: url("../img/welcomeFAQImage.png");
   background-position: center;
   background-size: cover;
 }
@@ -64,6 +64,18 @@
 .el__header > svg {
   width: 2.4rem;
   height: 2.4rem;
+}
+
+.close-icon {
+  display: none;
+}
+
+.active svg[class="open-icon"] {
+  display: none;
+}
+
+.active svg[class="close-icon"] {
+  display: inline-block;
 }
 
 .accordian__el > .underline {

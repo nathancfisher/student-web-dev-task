@@ -54,7 +54,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- Own JS -->
-    <script defer src="./src/js/main.js"></script>
+    <script type="module" defer src="./src/js/main.js"></script>
   </head>
 
   <body>
@@ -105,7 +105,7 @@
         <section class="faq mg-b--sm g__4--m g__8--t g__6--d">
           <ul class="accordian flex column gap--sm">
             <li class="flex column accordian__el gap--xsm" data-value="4">
-              <div class="flex between center el__header">
+              <button class="flex between center el__header">
                 <p>What Is Sheffield Students' Union?</p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -113,6 +113,7 @@
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
+                  class="open-icon"
                 >
                   <path
                     stroke-linecap="round"
@@ -120,7 +121,21 @@
                     d="M12 4.5v15m7.5-7.5h-15"
                   />
                 </svg>
-              </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="close-icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5 12h14"
+                  />
+                </svg>
+              </button>
 
               <div class="underline"></div>
 
@@ -142,7 +157,7 @@
             </li>
 
             <li class="flex column accordian__el gap--xsm" data-value="1">
-              <div class="flex between center el__header">
+              <button class="flex between center el__header">
                 <p>What Is Welcome Week?</p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -150,6 +165,7 @@
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
+                  class="open-icon"
                 >
                   <path
                     stroke-linecap="round"
@@ -157,7 +173,21 @@
                     d="M12 4.5v15m7.5-7.5h-15"
                   />
                 </svg>
-              </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="close-icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5 12h14"
+                  />
+                </svg>
+              </button>
 
               <div class="underline"></div>
 
@@ -175,7 +205,7 @@
               </div>
             </li>
             <li class="flex column accordian__el gap--xsm" data-value="2">
-              <div class="flex between center el__header">
+              <button class="flex between center el__header">
                 <p>Where can I find Official Freshers Week Nights Out?</p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -183,6 +213,7 @@
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
+                  class="open-icon"
                 >
                   <path
                     stroke-linecap="round"
@@ -190,7 +221,21 @@
                     d="M12 4.5v15m7.5-7.5h-15"
                   />
                 </svg>
-              </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="close-icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5 12h14"
+                  />
+                </svg>
+              </button>
 
               <div class="underline"></div>
 
@@ -210,7 +255,7 @@
               </div>
             </li>
             <li class="flex column accordian__el gap--xsm" data-value="3">
-              <div class="flex between center el__header">
+              <button class="flex between center el__header">
                 <p>I’m a bit anxious about it all. Will I be okay?</p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -218,6 +263,7 @@
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
+                  class="open-icon"
                 >
                   <path
                     stroke-linecap="round"
@@ -225,7 +271,21 @@
                     d="M12 4.5v15m7.5-7.5h-15"
                   />
                 </svg>
-              </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="close-icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5 12h14"
+                  />
+                </svg>
+              </button>
 
               <div class="underline"></div>
 
@@ -335,7 +395,10 @@
               >
             </p>
             <div class="btns grid grid--2-cols gap--sm">
-              <a class="btn btn--activities flex between" href="#">
+              <a
+                class="btn btn--activities flex align between"
+                href="https://su.sheffield.ac.uk/activities"
+              >
                 <p><span>Activities</span> & opportunities</p>
                 <div class="icon__wrapper flex center">
                   <svg
@@ -353,7 +416,10 @@
                   </svg>
                 </div>
               </a>
-              <a class="btn btn--activities flex between" href="#">
+              <a
+                class="btn btn--activities flex align between"
+                href="https://su.sheffield.ac.uk/activities/find-student-groups"
+              >
                 <p><span>Find societies</span> & sports clubs</p>
                 <div class="icon__wrapper flex center">
                   <svg
