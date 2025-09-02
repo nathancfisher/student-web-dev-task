@@ -1,0 +1,172 @@
+.section-header {
+  background-color: var(--color__blue);
+  border-radius: 100rem;
+  padding: 9.6rem 12.8rem;
+}
+
+.section-header > h2 {
+  color: #fff;
+}
+
+.section-header--img {
+  aspect-ratio: 1;
+  background-image: url("welcomeFAQImage.df0bc322.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  width: 100%;
+}
+
+.swiper--testimonials {
+  width: 100%;
+  height: 50rem;
+}
+
+.testimonial {
+  border-radius: var(--border__radius);
+  background-color: #f3f3f3;
+  padding: 2.4rem 4rem;
+}
+
+.testimonial p {
+  font-size: inherit;
+}
+
+.testimonial span {
+  font-weight: var(--font__weight--eb);
+}
+
+.accordian {
+  border-radius: var(--border__radius);
+  background-color: #00d2641a;
+  align-self: start;
+  padding: 3.2rem 4rem;
+}
+
+.el__header > p, .contact__header {
+  font-size: var(--font--lg);
+  font-weight: var(--font__weight--sb);
+}
+
+.el__header > svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.accordian__el > .underline {
+  border-radius: var(--border__radius);
+  background-color: #333;
+  width: 100%;
+  height: 1px;
+}
+
+.el__content {
+  border-bottom: 1px solid #ddd;
+  padding: 1.2rem 0 2.4rem 1.2rem;
+  display: none;
+}
+
+.el__content > p {
+  font-size: inherit;
+}
+
+.active > .el__content {
+  display: block;
+}
+
+.contact__information {
+  font-size: 1.8rem;
+  font-weight: var(--font__weight--sb);
+  width: 50%;
+}
+
+.swiper--images {
+  width: 100%;
+  height: auto;
+}
+
+.swiper--images .swiper-slide {
+  width: 35%;
+  display: block;
+}
+
+.swiper-slide img {
+  aspect-ratio: auto;
+  width: 100%;
+}
+
+.activities__header {
+  justify-content: flex-end;
+  width: 100%;
+  padding-top: 10%;
+  position: relative;
+}
+
+.activities__header > .tertiary-heading, .activities__header > .subheading {
+  color: #000;
+  border-radius: 100rem;
+}
+
+.activities__header > .tertiary-heading {
+  background-color: #cdc6fc;
+  width: 65%;
+  padding: 9.6rem;
+}
+
+.activities__header > .subheading {
+  background-color: #f6a60e;
+  align-self: flex-start;
+  width: 50%;
+  height: 50%;
+  padding: 8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.activities {
+  grid-template-columns: 3fr 2fr;
+}
+
+.activities__information > p {
+  font-size: var(--font--md);
+  border-radius: var(--border__radius);
+  font-weight: var(--font__weight--sb);
+  background-color: #e5fea3;
+  margin-bottom: 2.4rem;
+  padding: 4.2rem;
+}
+
+.btn--activities {
+  text-align: left;
+  background-color: #00a48f;
+  border: none;
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 2.4rem;
+}
+
+.btn--activities > p {
+  width: 80%;
+  font-size: var(--font--lg);
+  color: #fff;
+}
+
+.btn--activities span {
+  font-weight: var(--font__weight--eb);
+}
+
+.btn--activities .icon__wrapper {
+  background-color: #b1ffbe;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}
+
+.btn--activities svg {
+  color: #333;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+/*# sourceMappingURL=SU Interview.77a9bc14.css.map */

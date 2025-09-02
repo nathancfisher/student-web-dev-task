@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --font__weight--md: 500;
+  --font__weight--sb: 600;
+  --font__weight--b: 800;
+  --font__weight--eb: 900;
+  --border__radius: 5rem;
+}
+
+body {
+  color: #333;
+  line-height: 1.6;
+}
+/*# sourceMappingURL=SU Interview.34df27b5.css.map */
