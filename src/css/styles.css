@@ -61,9 +61,11 @@
   font-weight: var(--font__weight--sb);
 }
 
-.el__header > svg {
+.close-icon,
+.open-icon {
   width: 2.4rem;
   height: 2.4rem;
+  flex-shrink: 0;
 }
 
 .close-icon {
@@ -75,7 +77,7 @@
 }
 
 .active svg[class="close-icon"] {
-  display: inline-block;
+  display: block;
 }
 
 .accordian__el > .underline {
