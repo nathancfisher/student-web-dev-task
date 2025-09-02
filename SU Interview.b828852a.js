@@ -672,16 +672,30 @@ const accEls = [
     ...document.querySelectorAll(".accordian__el")
 ];
 const accordian = document.querySelector(".accordian");
-// Accordian Functionality
+// Track toggled elements
+let toggledAccEls = [];
 accordian.addEventListener("click", (e)=>{
-    accordianSet(e.target.closest(".accordian__el").dataset.value);
+    const clickedEl = e.target.closest(".accordian__el");
+    if (!clickedEl) return;
+    accordianSet(clickedEl.dataset.value);
 });
 const accordianReset = ()=>{
     accEls.forEach((el)=>el.classList.remove("active"));
 };
 const accordianSet = (value)=>{
+    const target = accEls.find((el)=>el.dataset.value === value);
+    if (!target) return;
+    updateToggled(target);
     accordianReset();
-    accEls.find((el)=>el.dataset.value === value).classList.add("active");
+    toggledAccEls.forEach((el)=>el.classList.add("active"));
+};
+const updateToggled = (target)=>{
+    // If already toggled, remove it
+    if (toggledAccEls.includes(target)) toggledAccEls = toggledAccEls.filter((el)=>el !== target);
+    else toggledAccEls = [
+        ...toggledAccEls,
+        target
+    ];
 };
 // Testimonials Swiper
 const testSwiper = new Swiper(".swiper--testimonials", {

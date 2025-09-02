@@ -10,6 +10,7 @@
 
   .swiper--testimonials .swiper-slide {
     width: 80%;
+    height: auto;
     display: block;
   }
 
@@ -205,8 +206,9 @@
     transform: translateY(10%);
   }
 
-  .testimonial {
-    width: 85%;
+  .swiper--testimonials .swiper-slide {
+    width: 90%;
+    display: block;
   }
 
   .activities__header > .subheading {
@@ -225,6 +227,10 @@
 
   .swiper--images {
     margin-bottom: 15rem;
+  }
+
+  .swiper--images .swiper-slide {
+    width: 45%;
   }
 }
 /*# sourceMappingURL=SU Interview.a6bb4ef6.css.map */

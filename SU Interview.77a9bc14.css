@@ -53,6 +53,14 @@
   height: 2.4rem;
 }
 
+.close-icon, .active svg[class="open-icon"] {
+  display: none;
+}
+
+.active svg[class="close-icon"] {
+  display: inline-block;
+}
+
 .accordian__el > .underline {
   border-radius: var(--border__radius);
   background-color: #333;

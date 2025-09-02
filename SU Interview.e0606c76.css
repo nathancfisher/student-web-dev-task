@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -32,6 +33,13 @@ body {
 
 header {
   all: unset;
+}
+
+button {
+  font-weight: inherit;
+  text-align: left;
+  font-family: inherit;
+  line-height: inherit;
 }
 
 .secondary-heading, .tertiary-heading, .subheading {
@@ -96,5 +104,9 @@ header {
 
 .flex.end {
   align-items: flex-end;
+}
+
+.flex.align {
+  align-items: center;
 }
 /*# sourceMappingURL=SU Interview.e0606c76.css.map */
